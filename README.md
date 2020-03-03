@@ -11,5 +11,5 @@ Installation
 
 Modules
 ------------------------------------------------------------------------------------
-migrate_html : This consists of HTML pages in "data" folder and Migration configuration in "config/install" folder.
-htmlparser: This consists of HTML parser plugin which parses HTML and converts them to text to be added on Nodes.
+1) migrate_html : This consists of HTML pages in "data" folder and Migration configuration in "config/install" folder.
+2) htmlparser: This consists of HTML parser plugin which parses HTML and converts them to text to be added on Nodes.
