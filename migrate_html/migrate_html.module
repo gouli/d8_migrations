@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains migrate_html.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function migrate_html_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the migrate_html module.
+    case 'help.page.migrate_html':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('This module is to migrate HTML into Drupal nodes') . '</p>';
+      return $output;
+
+    default:
+  }
+}

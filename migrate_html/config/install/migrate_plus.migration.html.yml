@@ -1,0 +1,25 @@
+status: true
+id: html
+migration_tags: directory
+label: 'HTML Migrations'
+source:
+  plugin: directory
+  urls:
+    - ./modules/custom/migrate_html/data
+  file_extensions:
+    - html
+  recurse_level: -1
+process:
+  title: filename
+  body/value:
+    plugin: htmlparser
+    source: url
+  body/format:
+    plugin: default_value
+    default_value: "full_html"
+destination:
+  plugin: 'entity:node'
+  default_bundle: page
+migration_dependencies:
+  required: {  }
+  optional: {  }
