@@ -5,8 +5,6 @@ namespace Drupal\htmlparser\Plugin\migrate\process;
 use Drupal\migrate\ProcessPluginBase;
 use Drupal\migrate\MigrateExecutableInterface;
 use Drupal\migrate\Row;
-use Drupal\Component\Utility;
-use Drupal\Component\Utility\Html;
 
 /**
  * Provides a 'Htmlparser' migrate process plugin.
